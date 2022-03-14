@@ -22,13 +22,13 @@
 }
 .container .heading h3{
   font-size: 3em;
-  font-weight: bolder;
+  font-weight: thin;
   padding-bottom: 10px;
   border-bottom: 3px solid #222;
 }
 
 .container .heading h3 span{
-  font-weight: 100;
+  font-weight: 50;
 }
 .container .box{
  display: flex;
