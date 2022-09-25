@@ -519,7 +519,6 @@
   var HAS_SKETCH = '__hasSketch';
   var M = Math;
 
-  var CANVAS = 'canvas';
   var WEBGL = 'webgl';
   var DOM = 'dom';
 

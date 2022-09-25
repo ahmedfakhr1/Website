@@ -25,34 +25,46 @@
 		<div class="loader"></div>
 	</div>
 
-
 	<!--====== Header Section Start ======-->
 	<header class="header-section">
-		<div class="logo">
-			<img src="img/logo.png" alt=""><!-- Logo -->
-		</div>
+		<div >
+			<div><a class="navbar-brand" href="#">Ahmed Fakhr</a></div>
+	</div>
 		<div class="responsive"><i class="fa fa-bars"></i></div>
 		<!-- Navigation -->
+		<ul class="menu-list">
+			<!-- <li><a href="#home">Home</a></li> -->
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#review">Reviews</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		
+	</header>
+	<!--====== Header Section End ======-->
+	<!--====== Header Section Start ======-->
+	<!-- <header class="header-section">
+		<div>
+		<a class="navbar-brand" href="#">Ahmed Fakhr</a>
+	</div>
+		<div class="responsive"><i class="fa fa-bars"></i></div>
 		<ul class="menu-list">
 			<li><a href="#home">Home</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
-	</header>
-	<!--====== Header Section End ======-->
-	<!-- ==== Intro Section Start ==== -->
-	<section class="intro-section fix" id="home">
-		<div class="intro-bg bg-cms">
-			</div>
-			<div class="intro-inner">
-				<div class="intro-content">
+		<br>
+		<br>
+		<br>
+		<div class="logo-subtitle" data-shrink-original-size="12" style="letter-spacing: 0.0833333em;">Retoucher</div>
 
-					<h2><span class="element"></span></h2>
-				</div>
-			</div>
-</section>
-	<!-- ==== Intro Section End ==== -->
+	</header> -->
+	<!--====== Header Section End ======-->
+	
 
 	<main class="main-warp">
 
@@ -571,6 +583,14 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
+						<div class="cont-form">
+							<h3>Contact us</h3>
+							<form action="mail.php" method="POST">
+								<p>Name</p> <input type="text" name="name">
+								<p>Email</p> <input type="text" name="email">
+								<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+								<input type="submit" value="Send"><input type="reset" value="Clear">
+								</form>
 						<div class="row">
 							<!-- Contact Info -->
 							<div class="col-md-4 col-sm-4 contact-info wow fadeInUp" data-wow-delay="0.2s">
