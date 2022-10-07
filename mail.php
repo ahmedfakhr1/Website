@@ -1,10 +1,19 @@
-<?php $name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
-$recipient = "emailaddress@here.com";
-$subject = "Contact Form";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
+<?php 
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $mailTo="afretoucher@gmail.com"
+    $headers="From: ".$email;
+    $txt="You Have recieved an e-mail from ".$name." .\n\n".$message;
+
+    mail(
+        $mailTo,$subject,$txt,$headers
+    );
+    header("Location: index.php?mailsend");
+
+}
+
 ?>
